@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhyV Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wanna hear your voice</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#paper">Paper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#demos">Demos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#playground">Playground</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Paper Section -->
+    <section id="paper" class="py-5">
+      <div class="container">
+        <h1 class="display-4">
+          <strong
+            >Hear Your Voice: Multi-language Adaptable Approach in Target
+            Speaker Extraction</strong
+          >
+        </h1>
+        <p class="lead">
+          The Hieu Pham, Phuong Thanh Tran Nguyen, Xuan Tho Nguyen, Tan Dat
+          Nguyen, Duc Dung Nguyen
+        </p>
+        <blockquote class="blockquote">
+          <p class="mb-0">"In the sea of voices, I wanna hear your voice."</p>
+        </blockquote>
+        <p class="mt-4">
+          Abstract: In audio clue-based target speaker extraction (TSE),
+          research has largely focused on modeling the mixture and reference
+          speech, achieving high performance in English where large datasets are
+          available, while paying less attention to the consistent properties of
+          human speech across languages. To address this gap, we introduce WhyV
+          (Wanna Hear Your Voice), which tackles the challenge of transferring
+          TSE models from one language to another without fine-tuning. The model
+          achieves an SI-SDR of 17.3544 on clean English speech and 13.2032 on
+          clean speech mixed with Wham! noise, outperforming all other models in
+          transfer ability to different languages. The main code will be
+          available at
+        </p>
+        <a href="your-paper-link.pdf" class="btn btn-primary me-2"
+          >Read Paper</a
+        >
+        <a href="https://github.com/your-repo" class="btn btn-secondary"
+          >View Code</a
+        >
+      </div>
+    </section>
+    <!-- Playground Section -->
+    <section id="playground" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Gradio Playground</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="p-3 border rounded bg-light">
+              <h5 class="text-primary">
+                Instructions for Using the Playground
+              </h5>
+              In the playground, you have two options:
+              <ul class="list-unstyled">
+                <li>
+                  <strong class="text-success">Mixing Tool:</strong> Use this
+                  tool to mix two separate speech files. Select the appropriate
+                  SNR rate and press
+                  <span class="badge bg-success">Mix Voices</span>.
+                </li>
+                <li>
+                  <strong class="text-info">Upload:</strong> Alternatively, you
+                  can upload two separate speech files.
+                </li>
+              </ul>
+              For the target speaker extractor, you can either:
+              <ul class="list-unstyled">
+                <li>
+                  <strong class="text-warning">From Mixing Tool:</strong> Use
+                  the mixed audio from the tool by selecting
+                  <em class="text-muted">From Mixing Tool</em>.
+                </li>
+                <li>
+                  <strong class="text-danger">Upload Mixed Audio:</strong>
+                  Choose this option and upload a mixed audio file.
+                </li>
+              </ul>
+              <em>Don't forget to add reference audio by uploading it!</em>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <iframe
+              src="https://hieupham14022003-wanna-hear-your-voice.hf.space"
+              frameborder="0"
+              width="800"
+              height="450"
+              style="background-color: white;"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demos Section -->
+    <section id="demos" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Demos</h2>
+
+        <!-- English Mix No Noise -->
+        <h3>English Mix No Noise</h3>
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h5>Group 1</h5>
+            <audio controls src="audio/english_no_noise_group1_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/english_no_noise_group1_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/english_no_noise_group1_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio
+              controls
+              src="audio/english_no_noise_group1_pred_speaker1.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio
+              controls
+              src="audio/english_no_noise_group1_pred_speaker2.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Group 2</h5>
+            <audio controls src="audio/english_no_noise_group2_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/english_no_noise_group2_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/english_no_noise_group2_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio
+              controls
+              src="audio/english_no_noise_group2_pred_speaker1.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio
+              controls
+              src="audio/english_no_noise_group2_pred_speaker2.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+        </div>
+
+        <!-- English Mix With Noise -->
+        <h3>English Mix With Noise</h3>
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h5>Group 1</h5>
+            <audio controls src="audio/english_with_noise_group1_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/english_with_noise_group1_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/english_with_noise_group1_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio
+              controls
+              src="audio/english_with_noise_group1_pred_speaker1.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio
+              controls
+              src="audio/english_with_noise_group1_pred_speaker2.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Group 2</h5>
+            <audio controls src="audio/english_with_noise_group2_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/english_with_noise_group2_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/english_with_noise_group2_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio
+              controls
+              src="audio/english_with_noise_group2_pred_speaker1.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio
+              controls
+              src="audio/english_with_noise_group2_pred_speaker2.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+        </div>
+
+        <!-- Vietnamese Mix -->
+        <h3>Vietnamese Mix</h3>
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h5>Group 1</h5>
+            <audio controls src="audio/vietnamese_group1_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/vietnamese_group1_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/vietnamese_group1_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/vietnamese_group1_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/vietnamese_group1_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Group 2</h5>
+            <audio controls src="audio/vietnamese_group2_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/vietnamese_group2_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/vietnamese_group2_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/vietnamese_group2_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/vietnamese_group2_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+        </div>
+
+        <!-- Korean Mix -->
+        <h3>Korean Mix</h3>
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h5>Group 1</h5>
+            <audio controls src="audio/korean_group1_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/korean_group1_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/korean_group1_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/korean_group1_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/korean_group1_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Group 2</h5>
+            <audio controls src="audio/korean_group2_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/korean_group2_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/korean_group2_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/korean_group2_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/korean_group2_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+        </div>
+
+        <!-- Multilanguage Mix -->
+        <h3>Multilanguage Mix</h3>
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h5>Group 1</h5>
+            <audio controls src="audio/multilanguage_group1_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/multilanguage_group1_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/multilanguage_group1_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/multilanguage_group1_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/multilanguage_group1_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Group 2</h5>
+            <audio controls src="audio/multilanguage_group2_mixed.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Mixed</p>
+            <audio controls src="audio/multilanguage_group2_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 1</p>
+            <audio controls src="audio/multilanguage_group2_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Speaker 2</p>
+            <audio controls src="audio/multilanguage_group2_pred_speaker1.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 1</p>
+            <audio controls src="audio/multilanguage_group2_pred_speaker2.wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Predicted Speaker 2</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
