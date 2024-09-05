@@ -31,10 +31,10 @@
               <a class="nav-link active" href="#paper">Paper</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#demos">Demos</a>
+              <a class="nav-link" href="#playground">Playground</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#playground">Playground</a>
+              <a class="nav-link" href="#demos">Demos</a>
             </li>
           </ul>
         </div>
@@ -139,7 +139,60 @@
     <section id="demos" class="py-5 bg-light">
       <div class="container">
         <h2 class="mb-4">Demos</h2>
-
+        <h3>Highlight demo</h3>
+        <h4>Vietnamese Conversation</h4>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <p>Vietnamese Conversation</p>
+            <audio controls src="audio/mix/complex_conversation_vi.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-4">
+            <p>Target speaker reference audio</p>
+            <audio controls src="audio/speaker1/complex_conversation_vi.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-4">
+            <p>Model ouput</p>
+            <audio controls src="audio/model_ouput/complex_conversation_vi.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <h4>Korean & English Mixed</h4>
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <p>Korean & English mixed audio</p>
+            <audio controls src="audio/mix/korean_english_mix.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-6">
+            <p>Target speaker reference audio</p>
+            <audio controls src="audio/speaker1/korean_english_ref.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <p>Model ouput</p>
+            <audio controls src="audio/model_ouput/korean_english.wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-6">
+            <p>Ground Truth</p>
+            <audio
+              controls
+              src="audio/speaker1/korean_english_ground_truth.wav"
+            >
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
         <!-- English Mix No Noise -->
         <h3>English Mix No Noise</h3>
         <div class="row mb-4">
@@ -204,6 +257,7 @@
         </div>
 
         <!-- English Mix With Noise -->
+
         <h3>English Mix With Noise</h3>
         <div class="row mb-4">
           <div class="col-lg-4">
