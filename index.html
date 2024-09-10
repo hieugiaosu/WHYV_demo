@@ -46,8 +46,8 @@
       <div class="container">
         <h1 class="display-4">
           <strong
-            >Wanna Hear Your Voice: Multi-language Adaptable Approach in Target
-            Speaker Extraction</strong
+            >Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic
+            Approach in Voice Extraction</strong
           >
         </h1>
         <p class="lead">
@@ -66,13 +66,16 @@
           properties of human speech across languages. To bridge this gap, we
           introduce WHYV (Wanna Hear Your Voice), which addresses the challenge
           of transferring TSE models from one language to another without
-          fine-tuning. The model achieves an SI-SDR of 17.3544 on clean English
+          fine-tuning. In this work, we proposed a gating mechanism that be able
+          to modify specific frequencies based on the speaker's acoustic
+          features. The model achieves an SI-SDR of 17.3544 on clean English
           speech and 13.2032 on clean speech mixed with Wham! noise,
-          outperforming all other models in its ability to transfer to different
-          languages. The main code will be available at
-          <a href="https://hieugiaosu.github.io/WhyV_demo"
-            >https://hieugiaosu.github.io/WhyV_demo</a
-          >
+          outperforming all other models in its ability to adapt to different
+          languages. % The main code will be available at Details of our
+          cross-language experiments can be found on our demo page (<a
+            href="https://hieugiaosu.github.io/WHYV_demo"
+            >https://hieugiaosu.github.io/WHYV_demo</a
+          >).
         </p>
         <p>
           <sup>†</sup>These authors contributed equally.
@@ -215,17 +218,11 @@
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 2</p>
-            <audio
-              controls
-              src="audio/english_no_noise/group1/output.wav"
-            >
+            <audio controls src="audio/english_no_noise/group1/output.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Model Output</p>
-            <audio
-              controls
-              src="audio/english_no_noise/group1/ref.flac"
-            >
+            <audio controls src="audio/english_no_noise/group1/ref.flac">
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 1 reference audio</p>
@@ -244,17 +241,11 @@
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 2</p>
-            <audio
-              controls
-              src="audio/english_no_noise/group2/output.wav"
-            >
+            <audio controls src="audio/english_no_noise/group2/output.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Model Output</p>
-            <audio
-              controls
-              src="audio/english_no_noise/group2/ref.flac"
-            >
+            <audio controls src="audio/english_no_noise/group2/ref.flac">
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 1 reference audio</p>
@@ -279,17 +270,11 @@
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 2</p>
-            <audio
-              controls
-              src="audio/english_with_noise/group1/output.wav"
-            >
+            <audio controls src="audio/english_with_noise/group1/output.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Model Output</p>
-            <audio
-              controls
-              src="audio/english_with_noise/group1/ref.wav"
-            >
+            <audio controls src="audio/english_with_noise/group1/ref.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 1 reference audio</p>
@@ -308,17 +293,11 @@
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 2</p>
-            <audio
-              controls
-              src="audio/english_with_noise/group2/output.wav"
-            >
+            <audio controls src="audio/english_with_noise/group2/output.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Model Output</p>
-            <audio
-              controls
-              src="audio/english_with_noise/group2/ref.wav"
-            >
+            <audio controls src="audio/english_with_noise/group2/ref.wav">
               Your browser does not support the audio element.
             </audio>
             <p>Speaker 1 reference audio</p>
