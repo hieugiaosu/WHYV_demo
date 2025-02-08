@@ -51,35 +51,24 @@
           >
         </h1>
         <p class="lead">
-          <a href="https://www.linkedin.com/in/thehieu1402/"
+          <!-- <a href="https://www.linkedin.com/in/thehieu1402/"
             >The Hieu Pham<sup>†</sup></a
           >, Phuong Thanh Tran Nguyen<sup>†</sup>, Xuan Tho Nguyen,
           <a href="https://signofthefour.github.io/">Tan Dat Nguyen</a>,
           <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en"
             >Duc Dung Nguyen<sup>*</sup></a
-          >
+          > -->
+          Anonymous Submission to INTERSPEECH 2025
         </p>
 
         <blockquote class="blockquote">
           <p class="mb-0">"In the sea of voices, I wanna hear yours."</p>
         </blockquote>
         <p class="mt-4">
-          Abstract: The research on audio clue-based target speaker extraction
-          (TSE) has mostly focused on modeling the mixture and reference speech,
-          achieving high performance in English due to the availability of large
-          datasets. However, less attention has been given to the consistent
-          properties of human speech across languages. To bridge this gap, we
-          introduce WHYV (Wanna Hear Your Voice), which addresses the challenge
-          of transferring TSE models from one language to another without
-          fine-tuning. In this work, we proposed a gating mechanism that be able
-          to modify specific frequencies based on the speaker's acoustic
-          features. The model achieves an SI-SDR of 17.3544 on clean English
-          speech and 13.2032 on clean speech mixed with Wham! noise,
-          outperforming all other models in its ability to adapt to different
-          languages. % The main code will be available at Details of our
-          cross-language experiments can be found on our demo page (<a
-            href="https://hieugiaosu.github.io/WHYV_demo"
-            >https://hieugiaosu.github.io/WHYV_demo</a
+          Abstract: Research on audio clue-based target speaker extraction (TSE) has primarily focused on modeling mixture and reference speech, achieving impressive results in English, largely due to the abundance of available datasets.  However, cross-lingual speech properties have received less attention. Low-resource languages, often lacking large-scale annotated datasets and sufficient linguistic resources, pose significant challenges for developing effective TSE systems. To address this gap, we introduce WHYV (Wanna Hear Your Voice), a novel approach designed for cross-lingual TSE model transfer without fine-tuning.  At the core of WHYV is a gating mechanism that dynamically modulates specific frequencies based on the target speaker's acoustic features, enabling robust zero-shot cross-lingual adaptation.  This innovation reduces reliance on language-specific information, allowing a model trained on one language to generalize effectively to other languages without additional training.  Our model achieves remarkable results, demonstrating superior zero-shot cross-lingual performance compared to existing models: 13.8 dB on the Libri2Mix dataset (mix-both mode), 18.1 dB (mix-clean mode), and 14.8 dB on a Vietnamese test set.
+          We provide the live demo at: (<a
+            href="https://anonymous.4open.science/w/WHYV/"
+            >https://anonymous.4open.science/w/WHYV/</a
           >).
         </p>
         <p>
