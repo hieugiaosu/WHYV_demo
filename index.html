@@ -56,7 +56,7 @@
       <div class="container">
         <h1 class="display-4">
           <strong
-            >Wanna hear your voice? A sample is all we need!</strong
+            >Language-Agnostic Target Speaker Extraction with Zero-Shot Generalization to Low-Resource Languages</strong
           >
         </h1>
         <p class="lead">
@@ -73,11 +73,7 @@
           <p class="mb-0">"In the sea of voices, I wanna hear yours."</p>
         </blockquote>
         <p class="mt-4">
-          Abstract: Research on audio clue-based target speaker extraction (TSE) has primarily focused on modeling mixture and reference speech, achieving impressive results in English, largely due to the abundance of available datasets.  However, cross-lingual speech properties have received less attention. Low-resource languages, often lacking large-scale annotated datasets and sufficient linguistic resources, pose significant challenges for developing effective TSE systems. To address this gap, we introduce WHYV (Wanna Hear Your Voice), a novel approach designed for cross-lingual TSE model transfer without fine-tuning.  At the core of WHYV is a gating mechanism that dynamically modulates specific frequencies based on the target speaker's acoustic features, enabling robust zero-shot cross-lingual adaptation.  This innovation reduces reliance on language-specific information, allowing a model trained on one language to generalize effectively to other languages without additional training.  Our model achieves remarkable results, demonstrating superior zero-shot cross-lingual performance compared to existing models: 13.8 dB on the Libri2Mix dataset (mix-both mode), 18.1 dB (mix-clean mode), and 14.8 dB on a Vietnamese test set.
-          We provide the live demo at: (<a
-            href="https://hieugiaosu.github.io/WHYV_demo/"
-            >https://hieugiaosu.github.io/WHYV_demo/</a
-          >).
+          Recent research on audio-based target speaker extraction (TSE) has achieved remarkable performance in high-resource languages such as English or Chinese. However, low-resource languages often lack large-scale high-fidelity datasets and sufficient linguistic resources, which raises significant challenges for developing effective TSE systems. To bridge this gap, we introduce a novel gating mechanism that effectively exploits acoustic information, thereby reducing dependence on linguistic information. In this work, we address the challenge of applying a well-trained model in one language to other languages without requiring additional training while maintaining consistent performance. With this approach, our model achieves remarkable performance on multiple settings with SDR of 13.8 dB and 18.1 on Libri2Mix dataset mix-both mode and mix-clean mode, respectively. Especially, we also examine the performance of our model on a low-resource language (Vietnamese) and achieve SOTA results with SDR of 14.8 dB without any additional training stages. These results demonstrate superior zero-shot adaptation to different languages compared to baselines. We provide the live demo, codebase, and benchmark at our repository
         </p>
         <p>
           <sup>*</sup>Corresponding author.
